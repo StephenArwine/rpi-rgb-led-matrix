@@ -66,6 +66,26 @@ struct HardwareMapping matrix_hardware_mappings[] = {
     .p2_b2         = GPIO_BIT(21),
   },
 
+  {
+    .name          = "ZI",
+
+    .output_enable = GPIO_BIT(4),
+    .clock         = GPIO_BIT(17),
+    .strobe        = GPIO_BIT(21),
+
+    /* Address lines */
+    .a             = GPIO_BIT(22),
+    .b             = GPIO_BIT(26),
+    .c             = GPIO_BIT(27),
+
+    .p0_r1         = GPIO_BIT(5),
+    .p0_g1         = GPIO_BIT(13),
+    .p0_b1         = GPIO_BIT(6),
+    .p0_r2         = GPIO_BIT(12),
+    .p0_g2         = GPIO_BIT(16),
+    .p0_b2         = GPIO_BIT(23),
+  },
+
   /*
    * This is used if you have an Adafruit HAT in the default configuration
    */

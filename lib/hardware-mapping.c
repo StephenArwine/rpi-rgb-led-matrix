@@ -69,21 +69,21 @@ struct HardwareMapping matrix_hardware_mappings[] = {
   {
     .name          = "ZI",
 
-    .output_enable = GPIO_BIT(4),
-    .clock         = GPIO_BIT(17),
-    .strobe        = GPIO_BIT(21),
+    .output_enable = GPIO_BIT(12),
+    .clock         = GPIO_BIT(16),
+    .strobe        = GPIO_BIT(7),
 
     /* Address lines */
-    .a             = GPIO_BIT(22),
+    .a             = GPIO_BIT(21),
     .b             = GPIO_BIT(26),
-    .c             = GPIO_BIT(27),
+    .c             = GPIO_BIT(20),
 
     .p0_r1         = GPIO_BIT(5),
-    .p0_g1         = GPIO_BIT(13),
-    .p0_b1         = GPIO_BIT(6),
-    .p0_r2         = GPIO_BIT(12),
-    .p0_g2         = GPIO_BIT(16),
-    .p0_b2         = GPIO_BIT(23),
+    .p0_g1         = GPIO_BIT(6),
+    .p0_b1         = GPIO_BIT(11),
+    .p0_r2         = GPIO_BIT(9),
+    .p0_g2         = GPIO_BIT(13),
+    .p0_b2         = GPIO_BIT(10),
   },
 
   /*
